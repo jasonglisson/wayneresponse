@@ -1,0 +1,135 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$oswald: 'Oswald', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+		font-family: $oswald;
+}
+
+// Variables
+$video-height: 100%;
+
+// Video
+.video-fg {
+  background: rgba(0, 0, 0, 0.48);
+  z-index: 2;
+  height: $video-height;
+  width: 100%;
+  position: absolute;
+}
+
+.video {
+  position: absolute;	
+	height: $video-height; 
+	width: 100%;
+}
+
+// Header
+.header{
+  z-index: 8;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  margin-bottom: -70px;
+  .top-bar {
+	  background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+#content {
+	position: relative;
+	z-index: 2;	
+	height: 500px;
+	#inner-content {
+    z-index: 3;
+    position: relative;		
+	}
+}
+
+// Headline Text
+.headline-area {
+	margin-top: 50px;
+	.headline {
+		font-family: $oswald;
+		color: #fff;
+		font-weight: bold;
+		font-size: 4.5rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.headline-text{
+		color: #fff;
+		font-family: $roboto;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.help-headline {
+		font-family: $oswald;
+		color: #fff;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;	
+	}
+	
+	hr {
+		width: 50%;
+		padding-top: 10px;
+	}
+	
+	.buttons {
+	  display: table;
+	  margin: 0 auto;
+	  width: auto;	
+		.button {
+			display: inline-block;
+			margin: 5px;
+		}
+		.donate {
+		  font-size: 1.3rem;
+		  color: #fff;
+		  border: 1px solid #fff;
+		  border-radius: .4rem;
+		  text-transform: uppercase;	
+			transition: .5s all;   
+		  &:hover {
+				border-radius: .7rem;	
+				border: 1px solid #559bff;		
+				color: #fff;
+				background: rgba(255, 255, 255, 0.38);
+		  }
+		}	
+		.learn-more {
+		  font-size: 1.3rem;
+		  color: #fff;
+		  background: rgba(222, 222, 222, 0.67);
+		  border: 1px solid #fff;
+		  border-radius: .4rem;
+		  text-transform: uppercase;	
+			transition: .5s all;   
+		  &:hover {
+				border-radius: .7rem;	
+				border: 1px solid #559bff;		
+				color: #fff;
+				background: rgba(255, 255, 255, 0.38);
+		  }		
+		}
+	}
+}
+// Lower Content
+#lower-content {
+  position: relative;
+  z-index: 3;
+  background: #fff;	
+  padding-top: 30px;
+  h3 {
+	  font-weight: bold;
+	  text-align: center;
+	  text-transform: uppercase;
+	  padding: 10px 0;
+  }
+}

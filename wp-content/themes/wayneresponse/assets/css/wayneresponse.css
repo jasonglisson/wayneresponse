@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif; }
+
+.video-fg {
+  background: rgba(0, 0, 0, 0.48);
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.video {
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.header {
+  z-index: 8;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  margin-bottom: -70px; }
+  .header .top-bar {
+    background-color: rgba(255, 255, 255, 0); }
+
+#content {
+  position: relative;
+  z-index: 2;
+  height: 500px; }
+  #content #inner-content {
+    z-index: 3;
+    position: relative; }
+
+.headline-area {
+  margin-top: 50px; }
+  .headline-area .headline {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .headline-area .headline-text {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; }
+  .headline-area .help-headline {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .headline-area hr {
+    width: 50%;
+    padding-top: 10px; }
+  .headline-area .buttons {
+    display: table;
+    margin: 0 auto;
+    width: auto; }
+    .headline-area .buttons .button {
+      display: inline-block;
+      margin: 5px; }
+    .headline-area .buttons .donate {
+      font-size: 1.3rem;
+      color: #fff;
+      border: 1px solid #fff;
+      border-radius: .4rem;
+      text-transform: uppercase;
+      transition: .5s all; }
+      .headline-area .buttons .donate:hover {
+        border-radius: .7rem;
+        border: 1px solid #559bff;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.38); }
+    .headline-area .buttons .learn-more {
+      font-size: 1.3rem;
+      color: #fff;
+      background: rgba(222, 222, 222, 0.67);
+      border: 1px solid #fff;
+      border-radius: .4rem;
+      text-transform: uppercase;
+      transition: .5s all; }
+      .headline-area .buttons .learn-more:hover {
+        border-radius: .7rem;
+        border: 1px solid #559bff;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.38); }
+
+#lower-content {
+  position: relative;
+  z-index: 3;
+  background: #fff;
+  padding-top: 30px; }
+  #lower-content h3 {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0; }
