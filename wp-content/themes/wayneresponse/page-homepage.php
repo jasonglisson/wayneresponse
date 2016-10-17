@@ -78,16 +78,19 @@ Template Name: Homepage
 	</div> <!-- end #content -->
 	<div id="lower-content">
 		<div class="row">
-		  <div class="large-4 columns"><img src="https://organizationdemo.files.wordpress.com/2013/08/page_01.jpg?w=640&h=480&crop=1">
-			  <h3>About</h3>
+		  <div class="large-4 columns">
+			  <h3>About</h3>			  
+			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about.jpg">
 			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>
 			</div>
-		  <div class="large-4 columns"><img src="https://organizationdemo.files.wordpress.com/2013/08/page_01.jpg?w=640&h=480&crop=1">
-			  <h3>Mission</h3>
+		  <div class="large-4 columns">
+			  <h3>Mission</h3>			  
+			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mission.jpg">
 			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
 			</div>
-		  <div class="large-4 columns"><img src="https://organizationdemo.files.wordpress.com/2013/08/page_01.jpg?w=640&h=480&crop=1">
-			  <h3>Contact Us</h3>
+		  <div class="large-4 columns">
+			  <h3>Contact Us</h3>			  
+			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contact-us.jpg">
 			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
 			</div>
 		</div>			

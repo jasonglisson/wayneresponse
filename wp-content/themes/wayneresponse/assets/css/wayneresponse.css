@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif; }
 
 .video-fg {
-  background: rgba(0, 0, 0, 0.48);
+  background: url(../images/overlay.png) repeat;
   z-index: 2;
   height: 100%;
   width: 100%;
@@ -22,17 +22,30 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: -70px; }
   .header .top-bar {
     background-color: rgba(255, 255, 255, 0); }
+    .header .top-bar .logo-wrap {
+      background-color: rgba(255, 255, 255, 0); }
+      .header .top-bar .logo-wrap a {
+        padding: 0; }
+      .header .top-bar .logo-wrap img {
+        height: 90px;
+        margin-bottom: -47px;
+        float: left;
+        display: block; }
+    .header .top-bar ul {
+      background-color: rgba(255, 255, 255, 0); }
+      .header .top-bar ul a {
+        color: #fff; }
 
 #content {
   position: relative;
   z-index: 2;
-  height: 500px; }
+  height: 550px; }
   #content #inner-content {
     z-index: 3;
     position: relative; }
 
 .headline-area {
-  margin-top: 50px; }
+  margin-top: 90px; }
   .headline-area .headline {
     font-family: "Oswald", sans-serif;
     color: #fff;

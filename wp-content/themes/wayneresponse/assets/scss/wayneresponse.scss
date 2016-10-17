@@ -14,7 +14,7 @@ $video-height: 100%;
 
 // Video
 .video-fg {
-  background: rgba(0, 0, 0, 0.48);
+  background: url(../images/overlay.png) repeat;
   z-index: 2;
   height: $video-height;
   width: 100%;
@@ -35,13 +35,31 @@ $video-height: 100%;
   margin-bottom: -70px;
   .top-bar {
 	  background-color: rgba(255, 255, 255, 0);
+	  .logo-wrap {
+	  	background-color: rgba(255, 255, 255, 0);	
+	  	a {
+		  	padding: 0;
+	  	}
+			img {
+				height: 90px;
+				margin-bottom: -47px;
+				float: left;
+				display: block;
+			}	  		  
+	  }
+	  ul {
+			background-color: rgba(255, 255, 255, 0);			
+			a {
+				color: #fff;
+			}  
+	  }  
   }
 }
 
 #content {
 	position: relative;
 	z-index: 2;	
-	height: 500px;
+	height: 550px;
 	#inner-content {
     z-index: 3;
     position: relative;		
@@ -50,7 +68,7 @@ $video-height: 100%;
 
 // Headline Text
 .headline-area {
-	margin-top: 50px;
+	margin-top: 90px;
 	.headline {
 		font-family: $oswald;
 		color: #fff;
