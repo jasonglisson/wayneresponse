@@ -32,11 +32,22 @@ $video-height: 100%;
   z-index: 8;
   position: relative;
   background: rgba(255, 255, 255, 0);
-  margin-bottom: -70px;
+  margin-bottom: -106px;
+  .top-bar.not-front {
+    background: rgba(102, 102, 102, 1);
+  }
+  .top-bar.scrolled {
+    background: rgba(102, 102, 102, 0.76);
+  }
   .top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
 	  background-color: rgba(255, 255, 255, 0);
+	  transition: .5s all;
 	  .logo-wrap {
 	  	background-color: rgba(255, 255, 255, 0);	
+	  	height: 90px;
 	  	a {
 		  	padding: 0;
 	  	}
@@ -46,6 +57,43 @@ $video-height: 100%;
 				float: left;
 				display: block;
 			}	  		  
+	  }
+	  .menu-item {
+    	padding-top: 22px;		  
+    	a {
+	    	color: #fff;
+				border-bottom: 1px dotted rgba(255, 255, 255, 0);
+				font-size: 1.3rem;
+				cursor: pointer;
+				transition: .5s all;
+				&:hover {
+					color: #ddd;
+					border-bottom: 1px dotted rgba(255, 255, 255, 0.85);					
+				}
+    	}
+	  }
+	  .menu-item.active {
+			a {
+				background: none;
+				border-bottom: 1px dotted #fff;
+			}  
+	  }
+	  .menu-item:last-of-type {
+		  a {
+				border: 1px solid #fff;
+				border-radius: 7px;
+				text-transform: uppercase;	
+				transition: .5s all;   
+				&:hover {
+					border-radius: .7rem;	
+					border: 1px solid #559bff;		
+					color: #fff;
+					background: rgba(255, 255, 255, 0.38);
+				}								  
+		  }  
+	  }
+	  .fb-menu-item {
+		  padding-right: 20px;
 	  }
 	  ul {
 			background-color: rgba(255, 255, 255, 0);			
@@ -59,16 +107,20 @@ $video-height: 100%;
 #content {
 	position: relative;
 	z-index: 2;	
-	height: 550px;
+	height: 630px;
 	#inner-content {
     z-index: 3;
     position: relative;		
 	}
 }
 
+#content-wrap {
+	padding-top: 200px;
+}
+
 // Headline Text
 .headline-area {
-	margin-top: 90px;
+	margin-top: 190px;
 	.headline {
 		font-family: $oswald;
 		color: #fff;
@@ -138,6 +190,7 @@ $video-height: 100%;
 		}
 	}
 }
+
 // Lower Content
 #lower-content {
   position: relative;
@@ -149,5 +202,23 @@ $video-height: 100%;
 	  text-align: center;
 	  text-transform: uppercase;
 	  padding: 10px 0;
+	  a {
+			display: block;
+			border-bottom: 1px dotted #666;		  
+			color: #666;
+	  }
   }
+  a {
+	  img {
+		  padding-bottom: 15px;
+	  }
+  }
+}
+
+// Footer
+.footer {
+	background: #666;
+	color: #fff;
+	padding-top: 15px;
+	margin-top: 30px;
 }

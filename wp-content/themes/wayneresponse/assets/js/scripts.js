@@ -21,4 +21,12 @@ jQuery(document).ready(function() {
     }
   });
 
+	jQuery(window).scroll(function() {  
+    if (jQuery(this).scrollTop() > 100) {
+        jQuery('.top-bar').addClass('scrolled');       
+    }else{
+        jQuery('.top-bar').removeClass('scrolled');      	    
+    }    
+	});
+
 });

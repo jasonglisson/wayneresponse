@@ -43,7 +43,14 @@ Template Name: Homepage
 	<!-- Uncomment this line if using the Off-Canvas Menu --> 
 		
 <body <?php body_class(); ?>>
-
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=270997929592089";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 <div class="off-canvas-wrapper">
 
 <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
@@ -70,7 +77,8 @@ Template Name: Homepage
 					<hr />
 					<h1 class="help-headline">We need your help!</h1>
 					<div class="buttons">
-						<button class="hollow donate button" href="#">Donate</button><button class="hollow learn-more button" href="#">Learn More</button>					
+						<a href="/donate"><button class="hollow donate button">Donate</button></a>
+						<a href="/about"><button class="hollow learn-more button">Learn More</button></a>
 					</div>
 				</div>	
 			</div>  
@@ -79,18 +87,18 @@ Template Name: Homepage
 	<div id="lower-content">
 		<div class="row">
 		  <div class="large-4 columns">
-			  <h3>About</h3>			  
-			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about.jpg">
+			  <h3><a href="/mission">Mission</a></h3>			  
+			  <a href="/mission"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mission.jpg"></a>
+			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
+			</div>			
+		  <div class="large-4 columns">
+			  <h3><a href="/about">About</a></h3>			  
+			  <a href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about.jpg"></a>
 			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>
 			</div>
 		  <div class="large-4 columns">
-			  <h3>Mission</h3>			  
-			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mission.jpg">
-			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
-			</div>
-		  <div class="large-4 columns">
-			  <h3>Contact Us</h3>			  
-			  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contact-us.jpg">
+			  <h3><a href="/contact-us">Contact Us</a></h3>			  
+			  <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contact-us.jpg"></a>
 			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
 			</div>
 		</div>			
