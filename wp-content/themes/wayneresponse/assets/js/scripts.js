@@ -21,6 +21,14 @@ jQuery(document).ready(function() {
     }
   });
 
+	jQuery('.thanks').click(function(){
+		jQuery('.thanks-wrap, .thank-you-text').fadeIn();
+	});
+
+	jQuery('.thanks-wrap').click(function(){
+		jQuery('.thanks-wrap, .thank-you-text').fadeOut();
+	});
+
 	jQuery(window).scroll(function() {  
     if (jQuery(this).scrollTop() > 100) {
         jQuery('.top-bar').addClass('scrolled');       

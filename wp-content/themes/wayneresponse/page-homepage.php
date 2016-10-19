@@ -72,36 +72,53 @@ Template Name: Homepage
 		<div id="inner-content">
 			<div class="row">
 				<div class="large-12 headline-area columns">
-					<h1 class="headline">Hurricane Matthew</h1>
-					<div class="headline-text">recently devastated Wayne County with flooding.</div>
+					<h1 class="headline"><?php print the_field('headline'); ?></h1>
+					<div class="headline-text"><?php print the_field('headline_text'); ?></div>
 					<hr />
 					<h1 class="help-headline">We need your help!</h1>
 					<div class="buttons">
-						<a href="/donate"><button class="hollow donate button">Donate</button></a>
-						<a href="/about"><button class="hollow learn-more button">Learn More</button></a>
+						<?php if( have_rows('buttons') ): ?>
+							<?php while( have_rows('buttons') ): the_row(); 
+								$text = get_sub_field('button_text');
+								$link = get_sub_field('button_link');
+							?>
+								<?php if($text): ?>
+									<a href="<?php print $link; ?>"><button class="hollow learn-more button"><?php print $text; ?></button></a>									
+								<?php endif; ?>
+							<?php endwhile; ?>
+						<?php endif; ?>						
 					</div>
 				</div>	
 			</div>  
+			<div class="thanks" title="Thank you!">!</div>
 		</div> <!-- end #inner-content -->
 	</div> <!-- end #content -->
 	<div id="lower-content">
 		<div class="row">
-		  <div class="large-4 columns">
-			  <h3><a href="/mission">Mission</a></h3>			  
-			  <a href="/mission"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mission.jpg"></a>
-			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
-			</div>			
-		  <div class="large-4 columns">
-			  <h3><a href="/about">About</a></h3>			  
-			  <a href="/about"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/about.jpg"></a>
-			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>
-			</div>
-		  <div class="large-4 columns">
-			  <h3><a href="/contact-us">Contact Us</a></h3>			  
-			  <a href="/contact-us"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/contact-us.jpg"></a>
-			  <span>This is an example of a page. Unlike posts, which are displayed on your blog’s front page in the order they’re published, pages are better suited for more timeless content that you want to be easily accessible, like your About…</span>		
-			</div>
+				<?php if( have_rows('bottom_image_links') ): ?>
+					<?php while( have_rows('bottom_image_links') ): the_row(); 
+						$bottom_title = get_sub_field('title_text');
+						$bottom_link = get_sub_field('link');
+						$bottom_image = get_sub_field('image');	
+						$bottom_text = get_sub_field('sub_text');													
+					?>
+						<div class="large-4 columns">
+						<?php if($bottom_title): ?>
+							<h3><a href="<?php print $bottom_link; ?>"><?php print $bottom_title; ?></a></h3>								
+						<?php endif; ?>
+						<?php if($bottom_image): ?>
+							<a href="<?php print $bottom_link; ?>"><img src="<?php print $bottom_image; ?>"></a>						
+						<?php endif; ?>
+						<?php if($bottom_text): ?>						
+							<span><?php print $bottom_text; ?></span>
+						<?php endif; ?>
+						</div>				  
+					<?php endwhile; ?>
+				<?php endif; ?>				
 		</div>			
 	</div>	
-
+	<div class="thanks-wrap"></div>
+	<div class="thank-you-text">
+		Thank you text goes here
+	</div>	
 <?php get_footer(); ?>

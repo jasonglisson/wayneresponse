@@ -47,7 +47,8 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom: 1px dotted rgba(255, 255, 255, 0);
         font-size: 1.3rem;
         cursor: pointer;
-        transition: .5s all; }
+        transition: .5s all;
+        font-family: "Roboto", sans-serif; }
         .header .top-bar .menu-item a:hover {
           color: #ddd;
           border-bottom: 1px dotted rgba(255, 255, 255, 0.85); }
@@ -78,9 +79,54 @@ h1, h2, h3, h4, h5, h6 {
   #content #inner-content {
     z-index: 3;
     position: relative; }
+    #content #inner-content .thanks {
+      color: #fff;
+      display: block;
+      font-size: 24px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      right: 10px;
+      bottom: -58px;
+      transition: .2s all; }
+      #content #inner-content .thanks:hover {
+        border: 4px solid #fff; }
+
+.thanks-wrap {
+  display: none;
+  background: rgba(0, 0, 0, 0.57);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 998; }
+
+.thank-you-text {
+  display: none;
+  position: absolute;
+  top: 200px;
+  background: #fff;
+  z-index: 999;
+  width: 600px;
+  padding: 25px;
+  border: 10px solid #666;
+  border-radius: 9px;
+  left: 0;
+  right: 0;
+  margin: auto; }
 
 #content-wrap {
   padding-top: 200px; }
+  #content-wrap h2 {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px dotted #666;
+    font-size: 3rem; }
 
 .headline-area {
   margin-top: 190px; }
@@ -117,13 +163,14 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 1.3rem;
       color: #fff;
       border: 1px solid #fff;
+      background: rgba(222, 222, 222, 0.57);
       border-radius: .4rem;
       text-transform: uppercase;
       transition: .5s all; }
       .headline-area .buttons .donate:hover {
         border-radius: .7rem;
         border: 1px solid #559bff;
-        color: #fff;
+        color: #666;
         background: rgba(255, 255, 255, 0.38); }
     .headline-area .buttons .learn-more {
       font-size: 1.3rem;
@@ -136,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
       .headline-area .buttons .learn-more:hover {
         border-radius: .7rem;
         border: 1px solid #559bff;
-        color: #fff;
+        color: #666;
         background: rgba(255, 255, 255, 0.38); }
 
 #lower-content {
