@@ -275,3 +275,68 @@ $video-height: 100%;
 	padding-top: 15px;
 	margin-top: 30px;
 }
+
+
+// Mobile Styles
+@media only screen and (min-width: 20em) and (max-width: 40em) { 
+	  
+	.header {
+		.top-bar {
+			.logo-wrap {
+				height: 62px;
+				img {
+					height: auto;
+				}
+			}
+		}
+	}			
+	  
+	.video-fg {
+		background: rgba(0, 0, 0, 0.3);		
+	}  
+	  
+	.video.show-for-small-only {
+		background-position: 20% 50% !important;		
+	}  
+	  
+	.top-bar-right {
+    padding-top: 10px;
+    font-size: 1.3rem;		
+	}  
+	
+	.top-bar-left {
+		width: 250px !important;	
+	}
+	
+	.menu-button {
+		width: 30% !important;
+		ul {
+			float: right;
+		}
+	}
+	  
+	.headline-area {
+		.headline {
+			margin-top: 20px;
+			font-size: 2.5rem;
+		}	
+	}
+	
+	#content {
+		#inner-content {
+			.thanks {
+				display: none;
+			}
+		}
+	}	
+	
+	#lower-content {
+		.large-4 {
+			padding: 10px 0;
+			h3 {
+				font-size: 2rem;			
+			}			
+		}
+	}	
+	
+}	

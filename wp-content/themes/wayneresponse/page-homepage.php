@@ -68,7 +68,8 @@ Template Name: Homepage
 </header> <!-- end .header -->
 	<div id="content">
 	<div class="video-fg"></div>
-	<div class="video" data-vide-bg="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/bg.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%"></div>			
+	<div class="video hide-for-small-only" data-vide-bg="<?php echo get_stylesheet_directory_uri(); ?>/assets/videos/bg.mp4" data-vide-options="loop: true, muted: true, position: 0% 0%"></div>
+	<div class="video show-for-small-only" style="background: url(<?php print the_field('mobile_home_bg', 'option'); ?>);"></div>					
 		<div id="inner-content">
 			<div class="row">
 				<div class="large-12 headline-area columns">
