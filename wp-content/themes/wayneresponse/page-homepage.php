@@ -119,6 +119,6 @@ Template Name: Homepage
 	</div>	
 	<div class="thanks-wrap"></div>
 	<div class="thank-you-text">
-		Thank you text goes here
+		<?php print the_field('thank_you_text'); ?>
 	</div>	
 <?php get_footer(); ?>

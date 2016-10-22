@@ -43,7 +43,7 @@ $video-height: 100%;
     position: fixed;
     top: 0;
     width: 100%;
-	  background-color: rgba(255, 255, 255, 0);
+	  background: rgba(102, 102, 102, 0.36);
 	  transition: .5s all;
 	  .logo-wrap {
 	  	background-color: rgba(255, 255, 255, 0);	
@@ -63,12 +63,11 @@ $video-height: 100%;
     	a {
 	    	color: #fff;
 				border-bottom: 1px dotted rgba(255, 255, 255, 0);
-				font-size: 1.3rem;
+				font-size: 1.1rem;
 				cursor: pointer;
 				transition: .5s all;
 				font-family: $roboto;
 				&:hover {
-					color: #ddd;
 					border-bottom: 1px dotted rgba(255, 255, 255, 0.85);					
 				}
     	}
@@ -85,9 +84,11 @@ $video-height: 100%;
 				border-radius: 7px;
 				text-transform: uppercase;	
 				transition: .5s all;   
+				background: #fff;
+				color: #666;				
 				&:hover {
 					border-radius: .7rem;	
-					border: 1px solid #559bff;		
+					border: 1px solid #fff;		
 					color: #fff;
 					background: rgba(255, 255, 255, 0.38);
 				}								  
@@ -159,12 +160,13 @@ $video-height: 100%;
 }
 
 #content-wrap {
-	padding-top: 200px;
+	padding-top: 220px;
 	h2 {
     text-transform: uppercase;
     text-align: center;
     border-bottom: 1px dotted #666;
     font-size: 3rem;
+		margin-bottom: 30px;    
 	}
 }
 
@@ -213,30 +215,30 @@ $video-height: 100%;
 		  font-size: 1.3rem;
 		  color: #fff;
 		  border: 1px solid #fff;
-		  background: rgba(222, 222, 222, 0.57);		  
+		  background: rgba(222, 222, 222, 0.2);	  
 		  border-radius: .4rem;
 		  text-transform: uppercase;	
 			transition: .5s all;   
 		  &:hover {
 				border-radius: .7rem;	
-				border: 1px solid #559bff;		
+				border: 1px solid #fff;		
 				color: #666;
-				background: rgba(255, 255, 255, 0.38);
+				background: rgba(255, 255, 255, 1);
 		  }
 		}	
 		.learn-more {
 		  font-size: 1.3rem;
 		  color: #fff;
-		  background: rgba(222, 222, 222, 0.67);
+		  background: rgba(222, 222, 222, 0.2);
 		  border: 1px solid #fff;
 		  border-radius: .4rem;
 		  text-transform: uppercase;	
 			transition: .5s all;   
 		  &:hover {
 				border-radius: .7rem;	
-				border: 1px solid #559bff;		
+				border: 1px solid #fff;		
 				color: #666;
-				background: rgba(255, 255, 255, 0.38);
+				background: rgba(255, 255, 255, 1);
 		  }		
 		}
 	}
