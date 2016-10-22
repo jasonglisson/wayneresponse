@@ -234,7 +234,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem; }
   #content #inner-content .thanks {
     display: none; }
-  #lower-content .large-4 {
-    padding: 10px 0; }
-    #lower-content .large-4 h3 {
-      font-size: 2rem; } }
+  #lower-content {
+    padding: 30px; }
+    #lower-content .large-4 {
+      padding: 10px 0; }
+      #lower-content .large-4 h3 {
+        font-size: 2rem; } }
